@@ -1,0 +1,746 @@
+2025-10-07T02:07:24.235-05:00  INFO 16236 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplicationTests : Starting PrimerParcialLeeApplicationTests using Java 21.0.4 with PID 16236 (started by Lee Brandon in C:\Users\Lee Brandon\Documents\IntelliJ IDEA Projects\PrimerParcialLee)
+2025-10-07T02:07:24.239-05:00  INFO 16236 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2025-10-07T02:07:26.179-05:00  INFO 16236 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-07T02:07:26.251-05:00  INFO 16236 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 0 JPA repository interfaces.
+2025-10-07T02:07:27.663-05:00  INFO 16236 --- [PrimerParcialLee] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-07T02:07:27.868-05:00  INFO 16236 --- [PrimerParcialLee] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-07T02:07:27.968-05:00  INFO 16236 --- [PrimerParcialLee] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-07T02:07:28.777-05:00  INFO 16236 --- [PrimerParcialLee] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-07T02:07:28.860-05:00  INFO 16236 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-07T02:07:29.726-05:00  INFO 16236 --- [PrimerParcialLee] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@6b9a1205
+2025-10-07T02:07:29.729-05:00  INFO 16236 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-07T02:07:30.391-05:00  INFO 16236 --- [PrimerParcialLee] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-07T02:07:32.504-05:00  INFO 16236 --- [PrimerParcialLee] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-07T02:07:34.242-05:00 ERROR 16236 --- [PrimerParcialLee] [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [num_cienta] in table [colaborador]
+2025-10-07T02:07:34.244-05:00  WARN 16236 --- [PrimerParcialLee] [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [num_cienta] in table [colaborador]
+2025-10-07T02:07:34.244-05:00  INFO 16236 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-07T02:07:34.270-05:00  INFO 16236 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-07T02:07:34.328-05:00  INFO 16236 --- [PrimerParcialLee] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-07T02:07:34.365-05:00 ERROR 16236 --- [PrimerParcialLee] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [num_cienta] in table [colaborador]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:144) ~[spring-boot-test-3.5.6.jar:3.5.6]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.2.11.jar:6.2.11]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.2.11.jar:6.2.11]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:563) ~[spring-boot-test-3.5.6.jar:3.5.6]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:144) ~[spring-boot-test-3.5.6.jar:3.5.6]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:110) ~[spring-boot-test-3.5.6.jar:3.5.6]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.2.11.jar:6.2.11]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.2.11.jar:6.2.11]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.2.11.jar:6.2.11]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200) ~[spring-test-6.2.11.jar:6.2.11]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139) ~[spring-test-6.2.11.jar:6.2.11]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-6.2.11.jar:6.2.11]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:159) ~[spring-test-6.2.11.jar:6.2.11]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:383) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:388) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:293) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:292) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:281) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:280) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:27) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:112) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:111) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:201) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:170) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:94) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:59) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:142) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$1(InterceptingLauncher.java:39) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:38) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.executeWithoutCancellationToken(LauncherAdapter.java:60) ~[surefire-junit-platform-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.execute(LauncherAdapter.java:52) ~[surefire-junit-platform-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:203) ~[surefire-junit-platform-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:168) ~[surefire-junit-platform-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:136) ~[surefire-junit-platform-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) ~[surefire-booter-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) ~[surefire-booter-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) ~[surefire-booter-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) ~[surefire-booter-3.5.4.jar:3.5.4]
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [num_cienta] in table [colaborador]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431) ~[spring-orm-6.2.11.jar:6.2.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.11.jar:6.2.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 100 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [num_cienta] in table [colaborador]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:149) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:46) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:99) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:77) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:289) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.11.jar:6.2.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.11.jar:6.2.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.11.jar:6.2.11]
+	... 104 common frames omitted
+
+2025-10-07T02:07:34.388-05:00  WARN 16236 --- [PrimerParcialLee] [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] to prepare test instance [pe.edu.upeu.PrimerParcialLee.PrimerParcialLeeApplicationTests@5ce1ec7]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@29dcad7e testClass = pe.edu.upeu.PrimerParcialLee.PrimerParcialLeeApplicationTests, locations = [], classes = [pe.edu.upeu.PrimerParcialLee.PrimerParcialLeeApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@28194a50, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2ad48653, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@238d68ff, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@47c81abf, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@1f760b47, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@dc9876b, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@133b4eef], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180) ~[spring-test-6.2.11.jar:6.2.11]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.2.11.jar:6.2.11]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200) ~[spring-test-6.2.11.jar:6.2.11]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139) ~[spring-test-6.2.11.jar:6.2.11]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-6.2.11.jar:6.2.11]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:159) ~[spring-test-6.2.11.jar:6.2.11]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:383) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:388) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:293) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:292) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:281) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:280) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:27) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:112) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:111) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:201) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:170) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:94) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:59) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:142) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$1(InterceptingLauncher.java:39) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:38) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.executeWithoutCancellationToken(LauncherAdapter.java:60) ~[surefire-junit-platform-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.execute(LauncherAdapter.java:52) ~[surefire-junit-platform-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:203) ~[surefire-junit-platform-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:168) ~[surefire-junit-platform-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:136) ~[surefire-junit-platform-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) ~[surefire-booter-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) ~[surefire-booter-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) ~[surefire-booter-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) ~[surefire-booter-3.5.4.jar:3.5.4]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [num_cienta] in table [colaborador]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:144) ~[spring-boot-test-3.5.6.jar:3.5.6]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.2.11.jar:6.2.11]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.2.11.jar:6.2.11]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:563) ~[spring-boot-test-3.5.6.jar:3.5.6]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:144) ~[spring-boot-test-3.5.6.jar:3.5.6]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:110) ~[spring-boot-test-3.5.6.jar:3.5.6]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.2.11.jar:6.2.11]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.2.11.jar:6.2.11]
+	... 80 common frames omitted
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [num_cienta] in table [colaborador]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431) ~[spring-orm-6.2.11.jar:6.2.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.11.jar:6.2.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 100 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [num_cienta] in table [colaborador]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:149) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:46) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:99) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:77) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:289) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.11.jar:6.2.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.11.jar:6.2.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.11.jar:6.2.11]
+	... 104 common frames omitted
+
+2025-10-07T02:10:36.653-05:00  INFO 18296 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplicationTests : Starting PrimerParcialLeeApplicationTests using Java 21.0.4 with PID 18296 (started by Lee Brandon in C:\Users\Lee Brandon\Documents\IntelliJ IDEA Projects\PrimerParcialLee)
+2025-10-07T02:10:36.655-05:00  INFO 18296 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2025-10-07T02:10:38.950-05:00  INFO 18296 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-07T02:10:39.012-05:00  INFO 18296 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 0 JPA repository interfaces.
+2025-10-07T02:10:40.339-05:00  INFO 18296 --- [PrimerParcialLee] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-07T02:10:40.512-05:00  INFO 18296 --- [PrimerParcialLee] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-07T02:10:40.598-05:00  INFO 18296 --- [PrimerParcialLee] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-07T02:10:41.326-05:00  INFO 18296 --- [PrimerParcialLee] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-07T02:10:41.409-05:00  INFO 18296 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-07T02:10:42.245-05:00  INFO 18296 --- [PrimerParcialLee] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@57f0bfc3
+2025-10-07T02:10:42.249-05:00  INFO 18296 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-07T02:10:42.805-05:00  INFO 18296 --- [PrimerParcialLee] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-07T02:10:44.608-05:00  INFO 18296 --- [PrimerParcialLee] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-07T02:10:44.907-05:00  INFO 18296 --- [PrimerParcialLee] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-07T02:10:46.735-05:00  INFO 18296 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplicationTests : Started PrimerParcialLeeApplicationTests in 10.832 seconds (process running for 13.219)
+2025-10-07T02:10:47.705-05:00  INFO 18296 --- [PrimerParcialLee] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-07T02:10:47.708-05:00  INFO 18296 --- [PrimerParcialLee] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-07T02:10:47.731-05:00  INFO 18296 --- [PrimerParcialLee] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-07T02:30:54.562-05:00  INFO 1688 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : Starting PrimerParcialLeeApplication using Java 21.0.4 with PID 1688 (C:\Users\Lee Brandon\Documents\IntelliJ IDEA Projects\PrimerParcialLee\target\classes started by Lee Brandon in C:\Users\Lee Brandon\Documents\IntelliJ IDEA Projects\PrimerParcialLee)
+2025-10-07T02:30:54.567-05:00  INFO 1688 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-10-07T02:30:56.460-05:00  INFO 1688 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-07T02:30:56.641-05:00  INFO 1688 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 158 ms. Found 4 JPA repository interfaces.
+2025-10-07T02:30:57.958-05:00  INFO 1688 --- [PrimerParcialLee] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2025-10-07T02:30:57.991-05:00  INFO 1688 --- [PrimerParcialLee] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-07T02:30:57.992-05:00  INFO 1688 --- [PrimerParcialLee] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07T02:30:58.145-05:00  INFO 1688 --- [PrimerParcialLee] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-07T02:30:58.146-05:00  INFO 1688 --- [PrimerParcialLee] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3499 ms
+2025-10-07T02:30:58.738-05:00  INFO 1688 --- [PrimerParcialLee] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-07T02:30:58.870-05:00  INFO 1688 --- [PrimerParcialLee] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-07T02:30:58.942-05:00  INFO 1688 --- [PrimerParcialLee] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-07T02:30:59.632-05:00  INFO 1688 --- [PrimerParcialLee] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-07T02:30:59.696-05:00  INFO 1688 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-07T02:31:00.597-05:00  INFO 1688 --- [PrimerParcialLee] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@2969a9a6
+2025-10-07T02:31:00.600-05:00  INFO 1688 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-07T02:31:01.190-05:00  INFO 1688 --- [PrimerParcialLee] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-07T02:31:03.012-05:00  INFO 1688 --- [PrimerParcialLee] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-07T02:31:03.279-05:00  INFO 1688 --- [PrimerParcialLee] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-07T02:31:05.031-05:00  INFO 1688 --- [PrimerParcialLee] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path '/'
+2025-10-07T02:31:05.050-05:00  INFO 1688 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : Started PrimerParcialLeeApplication in 11.842 seconds (process running for 12.707)
+2025-10-07T02:31:30.186-05:00  INFO 1688 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-07T02:31:30.192-05:00  INFO 1688 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-07T02:31:30.193-05:00  INFO 1688 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-07T02:31:30.232-05:00  WARN 1688 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /api/v1/proyecto
+2025-10-07T02:31:30.603-05:00  WARN 1688 --- [PrimerParcialLee] [http-nio-9091-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-10-07T02:31:42.132-05:00  WARN 1688 --- [PrimerParcialLee] [http-nio-9091-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /api/v1/proyectos
+2025-10-07T02:32:40.065-05:00  WARN 1688 --- [PrimerParcialLee] [http-nio-9091-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /api/v1/proyectos
+2025-10-07T02:34:53.391-05:00  INFO 1688 --- [PrimerParcialLee] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07T02:34:53.403-05:00  INFO 1688 --- [PrimerParcialLee] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-07T02:34:53.408-05:00  INFO 1688 --- [PrimerParcialLee] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-07T02:34:53.412-05:00  INFO 1688 --- [PrimerParcialLee] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-07T02:34:53.427-05:00  INFO 1688 --- [PrimerParcialLee] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-07T03:18:08.971-05:00  INFO 19972 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : Starting PrimerParcialLeeApplication using Java 21.0.4 with PID 19972 (C:\Users\Lee Brandon\Documents\IntelliJ IDEA Projects\PrimerParcialLee\target\classes started by Lee Brandon in C:\Users\Lee Brandon\Documents\IntelliJ IDEA Projects\PrimerParcialLee)
+2025-10-07T03:18:08.978-05:00  INFO 19972 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-10-07T03:18:11.618-05:00  INFO 19972 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-07T03:18:11.820-05:00  INFO 19972 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 177 ms. Found 4 JPA repository interfaces.
+2025-10-07T03:18:13.295-05:00  INFO 19972 --- [PrimerParcialLee] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2025-10-07T03:18:13.334-05:00  INFO 19972 --- [PrimerParcialLee] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-07T03:18:13.335-05:00  INFO 19972 --- [PrimerParcialLee] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07T03:18:13.506-05:00  INFO 19972 --- [PrimerParcialLee] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-07T03:18:13.507-05:00  INFO 19972 --- [PrimerParcialLee] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4398 ms
+2025-10-07T03:18:14.514-05:00  INFO 19972 --- [PrimerParcialLee] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-07T03:18:14.644-05:00  INFO 19972 --- [PrimerParcialLee] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-07T03:18:14.707-05:00  INFO 19972 --- [PrimerParcialLee] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-07T03:18:15.503-05:00  INFO 19972 --- [PrimerParcialLee] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-07T03:18:15.580-05:00  INFO 19972 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-07T03:18:16.365-05:00  INFO 19972 --- [PrimerParcialLee] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5fdb7394
+2025-10-07T03:18:16.368-05:00  INFO 19972 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-07T03:18:16.908-05:00  INFO 19972 --- [PrimerParcialLee] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-07T03:18:18.619-05:00  INFO 19972 --- [PrimerParcialLee] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-07T03:18:18.899-05:00  INFO 19972 --- [PrimerParcialLee] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-07T03:18:20.847-05:00  INFO 19972 --- [PrimerParcialLee] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path '/'
+2025-10-07T03:18:20.866-05:00  INFO 19972 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : Started PrimerParcialLeeApplication in 13.186 seconds (process running for 14.156)
+2025-10-07T03:18:40.794-05:00  INFO 19972 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-07T03:18:40.794-05:00  INFO 19972 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-07T03:18:40.794-05:00  INFO 19972 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-10-07T03:41:01.930-05:00  INFO 19972 --- [PrimerParcialLee] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07T03:41:01.943-05:00  INFO 19972 --- [PrimerParcialLee] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-07T03:41:01.958-05:00  INFO 19972 --- [PrimerParcialLee] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-07T03:41:01.962-05:00  INFO 19972 --- [PrimerParcialLee] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-07T03:41:01.979-05:00  INFO 19972 --- [PrimerParcialLee] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-07T03:41:12.959-05:00  INFO 15696 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : Starting PrimerParcialLeeApplication using Java 21.0.4 with PID 15696 (C:\Users\Lee Brandon\Documents\IntelliJ IDEA Projects\PrimerParcialLee\target\classes started by Lee Brandon in C:\Users\Lee Brandon\Documents\IntelliJ IDEA Projects\PrimerParcialLee)
+2025-10-07T03:41:12.964-05:00  INFO 15696 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-10-07T03:41:15.504-05:00  INFO 15696 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-07T03:41:15.679-05:00  INFO 15696 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 154 ms. Found 4 JPA repository interfaces.
+2025-10-07T03:41:16.971-05:00  INFO 15696 --- [PrimerParcialLee] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2025-10-07T03:41:17.006-05:00  INFO 15696 --- [PrimerParcialLee] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-07T03:41:17.008-05:00  INFO 15696 --- [PrimerParcialLee] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07T03:41:17.165-05:00  INFO 15696 --- [PrimerParcialLee] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-07T03:41:17.166-05:00  INFO 15696 --- [PrimerParcialLee] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4090 ms
+2025-10-07T03:41:17.733-05:00  INFO 15696 --- [PrimerParcialLee] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-07T03:41:17.844-05:00  INFO 15696 --- [PrimerParcialLee] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-07T03:41:17.908-05:00  INFO 15696 --- [PrimerParcialLee] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-07T03:41:18.569-05:00  INFO 15696 --- [PrimerParcialLee] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-07T03:41:18.631-05:00  INFO 15696 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-07T03:41:19.408-05:00  INFO 15696 --- [PrimerParcialLee] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@33a47707
+2025-10-07T03:41:19.411-05:00  INFO 15696 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-07T03:41:20.118-05:00  INFO 15696 --- [PrimerParcialLee] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-07T03:41:21.910-05:00  INFO 15696 --- [PrimerParcialLee] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-07T03:41:22.196-05:00  INFO 15696 --- [PrimerParcialLee] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-07T03:41:25.122-05:00  INFO 15696 --- [PrimerParcialLee] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path '/'
+2025-10-07T03:41:25.149-05:00  INFO 15696 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : Started PrimerParcialLeeApplication in 13.694 seconds (process running for 14.712)
+2025-10-07T03:41:45.216-05:00  INFO 15696 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-07T03:41:45.216-05:00  INFO 15696 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-07T03:41:45.219-05:00  INFO 15696 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-10-07T03:45:32.126-05:00  INFO 15696 --- [PrimerParcialLee] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07T03:45:32.137-05:00  INFO 15696 --- [PrimerParcialLee] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-07T03:45:32.143-05:00  INFO 15696 --- [PrimerParcialLee] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-07T03:45:32.147-05:00  INFO 15696 --- [PrimerParcialLee] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-07T03:45:32.162-05:00  INFO 15696 --- [PrimerParcialLee] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-07T03:53:54.435-05:00  INFO 19784 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : Starting PrimerParcialLeeApplication using Java 21.0.4 with PID 19784 (C:\Users\Lee Brandon\Documents\IntelliJ IDEA Projects\PrimerParcialLee\target\classes started by Lee Brandon in C:\Users\Lee Brandon\Documents\IntelliJ IDEA Projects\PrimerParcialLee)
+2025-10-07T03:53:54.435-05:00  INFO 19784 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-10-07T03:53:56.991-05:00  INFO 19784 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-07T03:53:57.180-05:00  INFO 19784 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 160 ms. Found 4 JPA repository interfaces.
+2025-10-07T03:53:58.535-05:00  INFO 19784 --- [PrimerParcialLee] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2025-10-07T03:53:58.570-05:00  INFO 19784 --- [PrimerParcialLee] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-07T03:53:58.572-05:00  INFO 19784 --- [PrimerParcialLee] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07T03:53:58.736-05:00  INFO 19784 --- [PrimerParcialLee] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-07T03:53:58.736-05:00  INFO 19784 --- [PrimerParcialLee] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4161 ms
+2025-10-07T03:53:59.355-05:00  INFO 19784 --- [PrimerParcialLee] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-07T03:53:59.497-05:00  INFO 19784 --- [PrimerParcialLee] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-07T03:53:59.605-05:00  INFO 19784 --- [PrimerParcialLee] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-07T03:54:00.581-05:00  INFO 19784 --- [PrimerParcialLee] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-07T03:54:00.658-05:00  INFO 19784 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-07T03:54:01.519-05:00  INFO 19784 --- [PrimerParcialLee] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@6e93b0e7
+2025-10-07T03:54:01.519-05:00  INFO 19784 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-07T03:54:02.208-05:00  INFO 19784 --- [PrimerParcialLee] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-07T03:54:04.124-05:00  INFO 19784 --- [PrimerParcialLee] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-07T03:54:04.413-05:00  INFO 19784 --- [PrimerParcialLee] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-07T03:54:07.352-05:00  INFO 19784 --- [PrimerParcialLee] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path '/'
+2025-10-07T03:54:07.377-05:00  INFO 19784 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : Started PrimerParcialLeeApplication in 14.412 seconds (process running for 15.409)
+2025-10-07T03:54:11.943-05:00  INFO 19784 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-07T03:54:11.944-05:00  INFO 19784 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-07T03:54:11.945-05:00  INFO 19784 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-07T04:00:18.483-05:00  INFO 19784 --- [PrimerParcialLee] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07T04:00:18.497-05:00  INFO 19784 --- [PrimerParcialLee] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-07T04:00:18.502-05:00  INFO 19784 --- [PrimerParcialLee] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-07T04:00:18.506-05:00  INFO 19784 --- [PrimerParcialLee] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-07T04:00:18.523-05:00  INFO 19784 --- [PrimerParcialLee] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-07T04:00:32.821-05:00  INFO 22832 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : Starting PrimerParcialLeeApplication using Java 21.0.4 with PID 22832 (C:\Users\Lee Brandon\Documents\IntelliJ IDEA Projects\PrimerParcialLee\target\classes started by Lee Brandon in C:\Users\Lee Brandon\Documents\IntelliJ IDEA Projects\PrimerParcialLee)
+2025-10-07T04:00:32.827-05:00  INFO 22832 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-10-07T04:00:35.344-05:00  INFO 22832 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-07T04:00:35.592-05:00  INFO 22832 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 211 ms. Found 4 JPA repository interfaces.
+2025-10-07T04:00:36.941-05:00  INFO 22832 --- [PrimerParcialLee] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2025-10-07T04:00:36.976-05:00  INFO 22832 --- [PrimerParcialLee] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-07T04:00:36.979-05:00  INFO 22832 --- [PrimerParcialLee] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07T04:00:37.122-05:00  INFO 22832 --- [PrimerParcialLee] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-07T04:00:37.122-05:00  INFO 22832 --- [PrimerParcialLee] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4189 ms
+2025-10-07T04:00:37.768-05:00  INFO 22832 --- [PrimerParcialLee] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-07T04:00:37.918-05:00  INFO 22832 --- [PrimerParcialLee] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-07T04:00:38.001-05:00  INFO 22832 --- [PrimerParcialLee] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-07T04:00:38.828-05:00  INFO 22832 --- [PrimerParcialLee] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-07T04:00:38.912-05:00  INFO 22832 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-07T04:00:39.715-05:00  INFO 22832 --- [PrimerParcialLee] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@793cef95
+2025-10-07T04:00:39.719-05:00  INFO 22832 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-07T04:00:40.272-05:00  INFO 22832 --- [PrimerParcialLee] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-07T04:00:42.067-05:00  INFO 22832 --- [PrimerParcialLee] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-07T04:00:42.378-05:00  INFO 22832 --- [PrimerParcialLee] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-07T04:00:44.734-05:00  INFO 22832 --- [PrimerParcialLee] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path '/'
+2025-10-07T04:00:44.759-05:00  INFO 22832 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : Started PrimerParcialLeeApplication in 13.346 seconds (process running for 14.544)
+2025-10-07T04:00:49.020-05:00  INFO 22832 --- [PrimerParcialLee] [http-nio-9091-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-07T04:00:49.020-05:00  INFO 22832 --- [PrimerParcialLee] [http-nio-9091-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-07T04:00:49.024-05:00  INFO 22832 --- [PrimerParcialLee] [http-nio-9091-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-07T04:13:28.703-05:00  INFO 22832 --- [PrimerParcialLee] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07T04:13:28.715-05:00  INFO 22832 --- [PrimerParcialLee] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-07T04:13:28.722-05:00  INFO 22832 --- [PrimerParcialLee] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-07T04:13:28.726-05:00  INFO 22832 --- [PrimerParcialLee] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-07T04:13:28.751-05:00  INFO 22832 --- [PrimerParcialLee] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-07T04:13:41.039-05:00  INFO 19056 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : Starting PrimerParcialLeeApplication using Java 21.0.4 with PID 19056 (C:\Users\Lee Brandon\Documents\IntelliJ IDEA Projects\PrimerParcialLee\target\classes started by Lee Brandon in C:\Users\Lee Brandon\Documents\IntelliJ IDEA Projects\PrimerParcialLee)
+2025-10-07T04:13:41.039-05:00  INFO 19056 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-10-07T04:13:43.637-05:00  INFO 19056 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-07T04:13:43.888-05:00  INFO 19056 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 213 ms. Found 4 JPA repository interfaces.
+2025-10-07T04:13:45.196-05:00  INFO 19056 --- [PrimerParcialLee] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2025-10-07T04:13:45.228-05:00  INFO 19056 --- [PrimerParcialLee] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-07T04:13:45.228-05:00  INFO 19056 --- [PrimerParcialLee] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07T04:13:45.370-05:00  INFO 19056 --- [PrimerParcialLee] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-07T04:13:45.373-05:00  INFO 19056 --- [PrimerParcialLee] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4213 ms
+2025-10-07T04:13:46.071-05:00  INFO 19056 --- [PrimerParcialLee] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-07T04:13:46.225-05:00  INFO 19056 --- [PrimerParcialLee] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-07T04:13:46.310-05:00  INFO 19056 --- [PrimerParcialLee] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-07T04:13:47.127-05:00  INFO 19056 --- [PrimerParcialLee] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-07T04:13:47.230-05:00  INFO 19056 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-07T04:13:48.112-05:00  INFO 19056 --- [PrimerParcialLee] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@6a51ae7c
+2025-10-07T04:13:48.114-05:00  INFO 19056 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-07T04:13:48.769-05:00  INFO 19056 --- [PrimerParcialLee] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-07T04:13:50.684-05:00  INFO 19056 --- [PrimerParcialLee] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-07T04:13:50.970-05:00  INFO 19056 --- [PrimerParcialLee] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-07T04:13:53.267-05:00  INFO 19056 --- [PrimerParcialLee] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path '/'
+2025-10-07T04:13:53.290-05:00  INFO 19056 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : Started PrimerParcialLeeApplication in 13.719 seconds (process running for 14.742)
+2025-10-07T04:13:53.998-05:00  INFO 19056 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-07T04:13:54.000-05:00  INFO 19056 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-07T04:13:54.002-05:00  INFO 19056 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-10-07T04:15:50.592-05:00  INFO 19056 --- [PrimerParcialLee] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07T04:15:50.605-05:00  INFO 19056 --- [PrimerParcialLee] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-07T04:15:50.613-05:00  INFO 19056 --- [PrimerParcialLee] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-07T04:15:50.618-05:00  INFO 19056 --- [PrimerParcialLee] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-07T04:15:50.651-05:00  INFO 19056 --- [PrimerParcialLee] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-07T04:16:03.475-05:00  INFO 17772 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : Starting PrimerParcialLeeApplication using Java 21.0.4 with PID 17772 (C:\Users\Lee Brandon\Documents\IntelliJ IDEA Projects\PrimerParcialLee\target\classes started by Lee Brandon in C:\Users\Lee Brandon\Documents\IntelliJ IDEA Projects\PrimerParcialLee)
+2025-10-07T04:16:03.481-05:00  INFO 17772 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-10-07T04:16:05.868-05:00  INFO 17772 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-07T04:16:06.076-05:00  INFO 17772 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 171 ms. Found 4 JPA repository interfaces.
+2025-10-07T04:16:07.276-05:00  INFO 17772 --- [PrimerParcialLee] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2025-10-07T04:16:07.304-05:00  INFO 17772 --- [PrimerParcialLee] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-07T04:16:07.307-05:00  INFO 17772 --- [PrimerParcialLee] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07T04:16:07.474-05:00  INFO 17772 --- [PrimerParcialLee] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-07T04:16:07.474-05:00  INFO 17772 --- [PrimerParcialLee] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3863 ms
+2025-10-07T04:16:08.325-05:00  INFO 17772 --- [PrimerParcialLee] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-07T04:16:08.544-05:00  INFO 17772 --- [PrimerParcialLee] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-07T04:16:08.641-05:00  INFO 17772 --- [PrimerParcialLee] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-07T04:16:09.496-05:00  INFO 17772 --- [PrimerParcialLee] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-07T04:16:09.604-05:00  INFO 17772 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-07T04:16:10.491-05:00  INFO 17772 --- [PrimerParcialLee] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@2037f12b
+2025-10-07T04:16:10.498-05:00  INFO 17772 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-07T04:16:11.297-05:00  INFO 17772 --- [PrimerParcialLee] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-07T04:16:13.296-05:00  INFO 17772 --- [PrimerParcialLee] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-07T04:16:13.558-05:00  INFO 17772 --- [PrimerParcialLee] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-07T04:16:15.851-05:00  INFO 17772 --- [PrimerParcialLee] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path '/'
+2025-10-07T04:16:15.874-05:00  INFO 17772 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : Started PrimerParcialLeeApplication in 13.842 seconds (process running for 14.877)
+2025-10-07T04:17:29.794-05:00  INFO 17772 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-07T04:17:29.794-05:00  INFO 17772 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-07T04:17:29.794-05:00  INFO 17772 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-10-07T04:23:18.928-05:00  INFO 17772 --- [PrimerParcialLee] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07T04:23:18.943-05:00  INFO 17772 --- [PrimerParcialLee] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-07T04:23:18.950-05:00  INFO 17772 --- [PrimerParcialLee] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-07T04:23:18.954-05:00  INFO 17772 --- [PrimerParcialLee] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-07T04:23:18.971-05:00  INFO 17772 --- [PrimerParcialLee] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-07T04:23:33.298-05:00  INFO 2684 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : Starting PrimerParcialLeeApplication using Java 21.0.4 with PID 2684 (C:\Users\Lee Brandon\Documents\IntelliJ IDEA Projects\PrimerParcialLee\target\classes started by Lee Brandon in C:\Users\Lee Brandon\Documents\IntelliJ IDEA Projects\PrimerParcialLee)
+2025-10-07T04:23:33.303-05:00  INFO 2684 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-10-07T04:23:35.491-05:00  INFO 2684 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-07T04:23:35.687-05:00  INFO 2684 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 168 ms. Found 4 JPA repository interfaces.
+2025-10-07T04:23:36.966-05:00  INFO 2684 --- [PrimerParcialLee] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2025-10-07T04:23:36.998-05:00  INFO 2684 --- [PrimerParcialLee] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-07T04:23:37.001-05:00  INFO 2684 --- [PrimerParcialLee] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07T04:23:37.183-05:00  INFO 2684 --- [PrimerParcialLee] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-07T04:23:37.185-05:00  INFO 2684 --- [PrimerParcialLee] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3775 ms
+2025-10-07T04:23:37.835-05:00  INFO 2684 --- [PrimerParcialLee] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-07T04:23:37.989-05:00  INFO 2684 --- [PrimerParcialLee] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-07T04:23:38.078-05:00  INFO 2684 --- [PrimerParcialLee] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-07T04:23:39.107-05:00  INFO 2684 --- [PrimerParcialLee] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-07T04:23:39.205-05:00  INFO 2684 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-07T04:23:40.214-05:00  INFO 2684 --- [PrimerParcialLee] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@699e0bf0
+2025-10-07T04:23:40.216-05:00  INFO 2684 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-07T04:23:40.955-05:00  INFO 2684 --- [PrimerParcialLee] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-07T04:23:42.970-05:00  INFO 2684 --- [PrimerParcialLee] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-07T04:23:43.261-05:00  INFO 2684 --- [PrimerParcialLee] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-07T04:23:45.606-05:00  INFO 2684 --- [PrimerParcialLee] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path '/'
+2025-10-07T04:23:45.635-05:00  INFO 2684 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : Started PrimerParcialLeeApplication in 13.748 seconds (process running for 14.801)
+2025-10-07T04:23:50.004-05:00  INFO 2684 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-07T04:23:50.006-05:00  INFO 2684 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-07T04:23:50.006-05:00  INFO 2684 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-10-07T04:31:42.111-05:00  INFO 2684 --- [PrimerParcialLee] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07T04:31:42.122-05:00  INFO 2684 --- [PrimerParcialLee] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-07T04:31:42.129-05:00  INFO 2684 --- [PrimerParcialLee] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-07T04:31:42.133-05:00  INFO 2684 --- [PrimerParcialLee] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-07T04:31:42.152-05:00  INFO 2684 --- [PrimerParcialLee] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-07T13:51:50.071-05:00  INFO 5008 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : Starting PrimerParcialLeeApplication using Java 21.0.4 with PID 5008 (C:\Users\Lee Brandon\Documents\IntelliJ IDEA Projects\PrimerParcialLee\target\classes started by Lee Brandon in C:\Users\Lee Brandon\Documents\IntelliJ IDEA Projects\PrimerParcialLee)
+2025-10-07T13:51:50.076-05:00  INFO 5008 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-10-07T13:51:52.247-05:00  INFO 5008 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-07T13:51:52.441-05:00  INFO 5008 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 168 ms. Found 4 JPA repository interfaces.
+2025-10-07T13:51:53.610-05:00  INFO 5008 --- [PrimerParcialLee] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2025-10-07T13:51:53.628-05:00  INFO 5008 --- [PrimerParcialLee] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-07T13:51:53.642-05:00  INFO 5008 --- [PrimerParcialLee] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07T13:51:53.737-05:00  INFO 5008 --- [PrimerParcialLee] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-07T13:51:53.754-05:00  INFO 5008 --- [PrimerParcialLee] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3535 ms
+2025-10-07T13:51:54.296-05:00  INFO 5008 --- [PrimerParcialLee] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-07T13:51:54.471-05:00  INFO 5008 --- [PrimerParcialLee] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-07T13:51:54.551-05:00  INFO 5008 --- [PrimerParcialLee] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-07T13:51:55.364-05:00  INFO 5008 --- [PrimerParcialLee] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-07T13:51:55.446-05:00  INFO 5008 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-07T13:51:56.315-05:00  INFO 5008 --- [PrimerParcialLee] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@3dfe92ef
+2025-10-07T13:51:56.322-05:00  INFO 5008 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-07T13:51:57.077-05:00  INFO 5008 --- [PrimerParcialLee] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-07T13:51:58.904-05:00  INFO 5008 --- [PrimerParcialLee] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-07T13:52:00.507-05:00  INFO 5008 --- [PrimerParcialLee] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-07T13:52:02.626-05:00  INFO 5008 --- [PrimerParcialLee] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path '/'
+2025-10-07T13:52:02.651-05:00  INFO 5008 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : Started PrimerParcialLeeApplication in 14.586 seconds (process running for 15.323)
+2025-10-07T13:56:45.503-05:00  INFO 5008 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-07T13:56:45.504-05:00  INFO 5008 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-07T13:56:45.506-05:00  INFO 5008 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-10-07T13:56:46.333-05:00  WARN 5008 --- [PrimerParcialLee] [http-nio-9091-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-10-07T14:01:41.746-05:00  INFO 5008 --- [PrimerParcialLee] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07T14:01:41.755-05:00  INFO 5008 --- [PrimerParcialLee] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-07T14:01:41.760-05:00  INFO 5008 --- [PrimerParcialLee] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-07T14:01:41.763-05:00  INFO 5008 --- [PrimerParcialLee] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-07T14:01:41.777-05:00  INFO 5008 --- [PrimerParcialLee] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-07T14:01:53.706-05:00  INFO 13208 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : Starting PrimerParcialLeeApplication using Java 21.0.4 with PID 13208 (C:\Users\Lee Brandon\Documents\IntelliJ IDEA Projects\PrimerParcialLee\target\classes started by Lee Brandon in C:\Users\Lee Brandon\Documents\IntelliJ IDEA Projects\PrimerParcialLee)
+2025-10-07T14:01:53.710-05:00  INFO 13208 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-10-07T14:01:56.063-05:00  INFO 13208 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-07T14:01:56.260-05:00  INFO 13208 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 171 ms. Found 4 JPA repository interfaces.
+2025-10-07T14:01:56.863-05:00  INFO 14444 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : Starting PrimerParcialLeeApplication using Java 21.0.4 with PID 14444 (C:\Users\Lee Brandon\Documents\IntelliJ IDEA Projects\PrimerParcialLee\target\classes started by Lee Brandon in C:\Users\Lee Brandon\Documents\IntelliJ IDEA Projects\PrimerParcialLee)
+2025-10-07T14:01:56.868-05:00  INFO 14444 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-10-07T14:01:57.825-05:00  INFO 13208 --- [PrimerParcialLee] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2025-10-07T14:01:57.867-05:00  INFO 13208 --- [PrimerParcialLee] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-07T14:01:57.868-05:00  INFO 13208 --- [PrimerParcialLee] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07T14:01:58.083-05:00  INFO 13208 --- [PrimerParcialLee] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-07T14:01:58.084-05:00  INFO 13208 --- [PrimerParcialLee] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4288 ms
+2025-10-07T14:01:58.803-05:00  INFO 13208 --- [PrimerParcialLee] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-07T14:01:58.909-05:00  INFO 13208 --- [PrimerParcialLee] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-07T14:01:58.975-05:00  INFO 13208 --- [PrimerParcialLee] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-07T14:01:59.132-05:00  INFO 14444 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-07T14:01:59.314-05:00  INFO 14444 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 156 ms. Found 4 JPA repository interfaces.
+2025-10-07T14:01:59.735-05:00  INFO 13208 --- [PrimerParcialLee] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-07T14:01:59.856-05:00  INFO 13208 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-07T14:02:00.535-05:00  INFO 14444 --- [PrimerParcialLee] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2025-10-07T14:02:00.570-05:00  INFO 14444 --- [PrimerParcialLee] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-07T14:02:00.571-05:00  INFO 14444 --- [PrimerParcialLee] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07T14:02:00.708-05:00  INFO 13208 --- [PrimerParcialLee] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1999149e
+2025-10-07T14:02:00.708-05:00  INFO 14444 --- [PrimerParcialLee] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-07T14:02:00.709-05:00  INFO 14444 --- [PrimerParcialLee] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3732 ms
+2025-10-07T14:02:00.712-05:00  INFO 13208 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-07T14:02:01.380-05:00  INFO 13208 --- [PrimerParcialLee] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-07T14:02:01.506-05:00  INFO 14444 --- [PrimerParcialLee] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-07T14:02:01.696-05:00  INFO 14444 --- [PrimerParcialLee] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-07T14:02:01.860-05:00  INFO 14444 --- [PrimerParcialLee] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-07T14:02:02.623-05:00  INFO 14444 --- [PrimerParcialLee] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-07T14:02:02.727-05:00  INFO 14444 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-07T14:02:03.156-05:00  INFO 13208 --- [PrimerParcialLee] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-07T14:02:03.424-05:00  INFO 13208 --- [PrimerParcialLee] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-07T14:02:03.465-05:00  INFO 14444 --- [PrimerParcialLee] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1657b017
+2025-10-07T14:02:03.468-05:00  INFO 14444 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-07T14:02:04.132-05:00  INFO 14444 --- [PrimerParcialLee] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-07T14:02:05.433-05:00  INFO 13208 --- [PrimerParcialLee] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path '/'
+2025-10-07T14:02:05.453-05:00  INFO 13208 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : Started PrimerParcialLeeApplication in 12.865 seconds (process running for 13.84)
+2025-10-07T14:02:05.463-05:00  INFO 13208 --- [PrimerParcialLee] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07T14:02:05.476-05:00  INFO 13208 --- [PrimerParcialLee] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-07T14:02:05.482-05:00  INFO 13208 --- [PrimerParcialLee] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-07T14:02:05.488-05:00  INFO 13208 --- [PrimerParcialLee] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-07T14:02:05.514-05:00  INFO 13208 --- [PrimerParcialLee] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-07T14:02:05.948-05:00  INFO 14444 --- [PrimerParcialLee] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-07T14:02:06.193-05:00  INFO 14444 --- [PrimerParcialLee] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-07T14:02:08.000-05:00  INFO 14444 --- [PrimerParcialLee] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path '/'
+2025-10-07T14:02:08.015-05:00  INFO 14444 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : Started PrimerParcialLeeApplication in 12.433 seconds (process running for 13.614)
+2025-10-07T14:02:08.019-05:00  INFO 14444 --- [PrimerParcialLee] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07T14:02:08.030-05:00  INFO 14444 --- [PrimerParcialLee] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-07T14:02:08.035-05:00  INFO 14444 --- [PrimerParcialLee] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-07T14:02:08.038-05:00  INFO 14444 --- [PrimerParcialLee] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-07T14:02:08.054-05:00  INFO 14444 --- [PrimerParcialLee] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-07T14:02:13.293-05:00  INFO 4156 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : Starting PrimerParcialLeeApplication using Java 21.0.4 with PID 4156 (C:\Users\Lee Brandon\Documents\IntelliJ IDEA Projects\PrimerParcialLee\target\classes started by Lee Brandon in C:\Users\Lee Brandon\Documents\IntelliJ IDEA Projects\PrimerParcialLee)
+2025-10-07T14:02:13.303-05:00  INFO 4156 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-10-07T14:02:15.612-05:00  INFO 4156 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-07T14:02:15.795-05:00  INFO 4156 --- [PrimerParcialLee] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 147 ms. Found 4 JPA repository interfaces.
+2025-10-07T14:02:17.150-05:00  INFO 4156 --- [PrimerParcialLee] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2025-10-07T14:02:17.183-05:00  INFO 4156 --- [PrimerParcialLee] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-07T14:02:17.185-05:00  INFO 4156 --- [PrimerParcialLee] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-07T14:02:17.335-05:00  INFO 4156 --- [PrimerParcialLee] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-07T14:02:17.335-05:00  INFO 4156 --- [PrimerParcialLee] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3932 ms
+2025-10-07T14:02:18.050-05:00  INFO 4156 --- [PrimerParcialLee] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-07T14:02:18.166-05:00  INFO 4156 --- [PrimerParcialLee] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-07T14:02:18.241-05:00  INFO 4156 --- [PrimerParcialLee] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-07T14:02:19.039-05:00  INFO 4156 --- [PrimerParcialLee] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-07T14:02:19.122-05:00  INFO 4156 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-07T14:02:20.012-05:00  INFO 4156 --- [PrimerParcialLee] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@3dde5f38
+2025-10-07T14:02:20.012-05:00  INFO 4156 --- [PrimerParcialLee] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-07T14:02:20.692-05:00  INFO 4156 --- [PrimerParcialLee] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-07T14:02:22.549-05:00  INFO 4156 --- [PrimerParcialLee] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-07T14:02:22.816-05:00  INFO 4156 --- [PrimerParcialLee] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-07T14:02:25.249-05:00  INFO 4156 --- [PrimerParcialLee] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path '/'
+2025-10-07T14:02:25.272-05:00  INFO 4156 --- [PrimerParcialLee] [main] p.e.u.P.PrimerParcialLeeApplication      : Started PrimerParcialLeeApplication in 13.235 seconds (process running for 14.218)
+2025-10-07T14:03:03.307-05:00  INFO 4156 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-07T14:03:03.307-05:00  INFO 4156 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-07T14:03:03.310-05:00  INFO 4156 --- [PrimerParcialLee] [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-10-07T15:38:01.154-05:00  INFO 4156 --- [PrimerParcialLee] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-07T15:38:01.165-05:00  INFO 4156 --- [PrimerParcialLee] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-07T15:38:01.173-05:00  INFO 4156 --- [PrimerParcialLee] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-07T15:38:01.177-05:00  INFO 4156 --- [PrimerParcialLee] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-07T15:38:01.190-05:00  INFO 4156 --- [PrimerParcialLee] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
